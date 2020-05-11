@@ -7,6 +7,9 @@
 
   <div class="container">
     {% include header.html %}
+    {% if page.type == "about" or page.type == "frontpage" %}
+      {% include abouthead.html %}
+    {% endif %}
 
     <div class="post-container">
       {{ content }}

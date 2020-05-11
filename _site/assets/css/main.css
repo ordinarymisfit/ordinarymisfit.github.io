@@ -114,9 +114,20 @@ hr {
   color: #505050;
 }
 
-.masthead-subtitle {
-  color: #999;
+@media screen and (max-width: 640px) {
+   .masthead-subtitle  {
+    color: #999;
+    display:none;
+    float: left;
+    } 
+  }
+@media screen and (min-width: 641px) { 
+  .masthead-subtitle  { 
+    color: #999;
+    float: right;
+  } 
 }
+
 
 /*
   Thumbnail
